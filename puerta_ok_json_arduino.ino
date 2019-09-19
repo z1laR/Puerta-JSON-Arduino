@@ -30,7 +30,7 @@ void setup()
   Serial.println("Conectado a la red:");
   client.dhcp();
 
-  Serial.print("IP de Placa Ethernet Shield ");
+  Serial.print("IP de Placa Ethernet Shield:");
   Serial.println(Ethernet.localIP());
   
   Serial.println("Listo :D!");
