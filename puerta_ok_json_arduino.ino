@@ -27,7 +27,7 @@ void setup()
     
   Serial.begin(9600);
   
-  Serial.println("connect to network");
+  Serial.println("Conectado a la red:");
   client.dhcp();
 
   Serial.print("IP de Placa Ethernet Shield ");
@@ -110,7 +110,7 @@ int Puerta()
     }
       if((estadoP == 0) && (salida == 1) && (alarma == 1))
       {
-        Serial.println("Puerta abierta");
+        Serial.println("Puerta cerrada");
         Serial.println("Cerrada sospechosamente");
       
         Serial.print("Tono 16.35 Hz");
